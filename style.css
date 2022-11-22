@@ -1,0 +1,104 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	display: flex;
+	font-family: 'Fredoka One', cursive;
+	background-color: #073b4c;
+	color: #f0f0f0;
+}
+.red,
+.blue {
+	width: 40vw;
+}
+.red {
+	background-color: #ef476f;
+}
+.blue {
+	background-color: #118ab2;
+}
+.center {
+	width: 20vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+	position: relative;
+}
+.center button {
+	margin-bottom: 20px;
+}
+.top,
+.bottom {
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+h2 {
+	font-size: 50vh;
+	-webkit-text-stroke-width: 5px;
+	-webkit-text-stroke-color: #2f2f2f;
+}
+.inputs {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+.inputs p {
+	font-size: 28px;
+}
+.inputs .row {
+	display: flex;
+}
+.inputs button {
+	margin: 5px;
+	width: 2.5em;
+	height: 2.5em;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+button {
+	border: 7px solid #2f2f2f;
+	background-color: #ffba66;
+	color: #f0f0f0;
+	border-radius: 10px;
+	font-size: 28px;
+	padding: 0.7em 1em;
+	font-weight: 500;
+	font-family: 'Fredoka One', cursive;
+	z-index: 500;
+}
+button.reset {
+	background-color: #ef476f;
+}
+button.next {
+	background-color: #06d6a0;
+}
+button.settings {
+	background-color: #acacac;
+}
+.center .red,
+.center .blue {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+.center .red {
+	left: 0;
+	right: 50%;
+}
+.center .blue {
+	right: 0;
+	left: 50%;
+}
